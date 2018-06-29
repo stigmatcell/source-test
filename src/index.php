@@ -19,7 +19,7 @@
                 <h2>Congratulations</h2>
                 <p>Your PHP application is now running on a container in Amazon ECS.</p>
                 <p>marcel testing yoo 0.2<?php echo phpversion(); ?>.</p>
-                <?php
+                          <?php
                         $myfile = fopen("/var/www/my-vol/date", "r") or die("");
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
                         fclose($myfile);
@@ -31,5 +31,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
     </body>
+<?php
 
+// Show all information, defaults to INFO_ALL
+phpinfo();
 </html>
